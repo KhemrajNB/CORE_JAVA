@@ -4,9 +4,9 @@ public class PrimeNumber {
 
 	public static void main(String[] args) {
 		//Prime or Not Prime
-		int a = 9;
+		int a = 12;
 		Boolean flag = true;
-		for(int i = 2; i<a; i++) {
+		for(int i = 2; i<=a/2; i++) {
 			if(a%i==0) {
 				flag = false;
 				break;
@@ -21,12 +21,20 @@ public class PrimeNumber {
 		
 		
 		
+		
+		
+		
+		
 		//Function Call For Prime or Not Prime
 		System.out.println(primeOrNot(a) + " Using Function");
 		
 		
+		
+		
+		
+		
 		//Prime Series from 1 to N
-		int b = 30;
+		int b = 500;
 		System.out.print("Series of Prime : ");
 		for(int i = 1; i<=b; i++) {
 			if(primeOrNotTF(i)) {
@@ -40,7 +48,7 @@ public class PrimeNumber {
 	}
 	
 	public static String primeOrNot(int a) {
-		for(int i = 2; i<a; i++) {
+		for(int i = 2; i<=a/2; i++) {
 			if(a%i==0) {
 				return "Not Prime";
 			}
@@ -50,7 +58,7 @@ public class PrimeNumber {
 	}
 	
 	public static Boolean primeOrNotTF(int a) {
-		for(int i = 2; i<a; i++) {
+		for(int i = 2; i<=a/2; i++) {
 			if(a%i==0) {
 				return false;
 			}

@@ -21,7 +21,7 @@ public class CountVowels {
 		System.out.println("Vowel : " + count);
 		System.out.println("Space : " + space);
 		System.out.println("Consonent : " + (len-count-space));
-		System.out.println(len-space);
+		//System.out.println(len-space);
 
 	}
 

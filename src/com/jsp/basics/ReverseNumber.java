@@ -3,8 +3,7 @@ package com.jsp.basics;
 public class ReverseNumber {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int n = 11211;
+		int n = 1234;
 		int temp = n;
 		int rev = 0;
 		
@@ -13,13 +12,16 @@ public class ReverseNumber {
 			n= n/10;
 		}
 		
+		
+		
+		
 		if(temp==rev) {
 			System.out.println("Palin");
 		}
 		else {
 			System.out.println("Not Palin");
 		}
-		System.out.println(n);
+		System.out.println(rev);
 		
 	}
 
