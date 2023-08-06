@@ -15,7 +15,7 @@ public class BoxOffice {
 //		theatre.cancelTicket(20);
 //		theatre.showTicketDetails();
 //		theatre.showSeatAvailable();
-		
+		System.out.println(Math.PI);
 		Theatre theatre = new Theatre("PVR");
 		boolean flag= true;
 		while(flag) {
@@ -41,6 +41,7 @@ public class BoxOffice {
 				System.out.println("Enter No of Tickets to Cancel:");
 				o = sc.nextInt();
 				theatre.cancelTicket(o);
+				System.out.println( theatre.getTicket()!=null);
 				break;
 			case 5:
 				flag = false;

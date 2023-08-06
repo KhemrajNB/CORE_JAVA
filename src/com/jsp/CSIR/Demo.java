@@ -1,34 +1,34 @@
 package com.jsp.CSIR;
 
-public class Demo {
-	int n;
-	
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Objects;
+
+public class Demo               extends Demo1{
 	
 	public static void main(String[] args) {
-		//up casting 
-		B b1 = new B();
-		A a1 = b1;
 		
-		//down casting
-		A a2 = new A();
-		B b2 = (B)a2;
+		Demo1 d1 = new Demo();
+		Demo d2 = (Demo)d1;
+		System.out.println(d1.equals(d2));
+		ArrayList<Integer> al = new ArrayList<>();
+		al.add(2);
+		al.add(3);
+		al.add(5);
+		al.add(6);
+		al.add(2);
 		
+		Collections.sort(al);
+		System.out.println(al);
 		
+		int arr[]= {5,2,7,3,7,2};
+		Arrays.sort(arr);
+		for(int i : arr) {
+			System.out.print(i+" ");
+		}
+		System.out.println();Objects.hash(10);
 		
 	}
 
-}
-
-class A{
-	int a = 10;
-	public void printA() {
-		System.out.println("A : " + a);
-	}
-}
-
-class B extends A{
-	int b = 20;
-	public void printB() {
-		System.out.println("B : " + b);
-	}
 }
