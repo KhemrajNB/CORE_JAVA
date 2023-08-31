@@ -39,7 +39,15 @@ public class PrimeNumber {
 		for(int i = 1; i<=b; i++) {
 			if(primeOrNotTF(i)) {
 				System.out.print(i + " ");
+				
 			}
+			
+		}
+		System.out.println();
+		System.out.print("Series of Prime : ");
+		for(int i = 1; i<=b; i++) {
+			System.out.print(primeOrNotTF(i)?i + " ":"");
+			
 		}
 		
 		
